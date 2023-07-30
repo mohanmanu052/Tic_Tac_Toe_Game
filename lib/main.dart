@@ -6,8 +6,8 @@ import 'view/tic_tac_toe_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final ticTacToeProvider = TicTacToeProvider();
-  await ticTacToeProvider.loadGameState();
+  //final ticTacToeProvider = TicTacToeProvider();
+  //await ticTacToeProvider.loadGameState();
 
   runApp(TicTacToeApp());
 }

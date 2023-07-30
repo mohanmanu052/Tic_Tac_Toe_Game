@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:tic_tac_toe/controller/tic_tac_toe_provider.dart';
 
@@ -24,8 +27,10 @@ class _TicTacToeScreenState extends State<TicTacToeScreen> {
     return WillPopScope(
         onWillPop: () async {
           // Save the game state when the back button is pressed
+          //await ticTacToeProvider.saveGameState();
           await ticTacToeProvider.saveGameState();
-          Navigator.pop(context, true);
+          // Navigator.of(context).pop(true);
+          exit(0);
 
           return true;
         },
@@ -36,7 +41,8 @@ class _TicTacToeScreenState extends State<TicTacToeScreen> {
               iconSize: 20.0,
               onPressed: () async {
                 await ticTacToeProvider.saveGameState();
-                Navigator.pop(context, true);
+                // Navigator.of(context).pop(true);
+                exit(0);
               },
             ),
             title: Text('Tic Tac Toe'),
