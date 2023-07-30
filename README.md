@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+# TicTacToe game build on Provider StateMangement System
+# Architecture Pattern Used was MVC
+# To Run The Projcet Frist Clone The Project
+# Import the project in Vscode or Android Studio
+# Then Run flutter pub get
+# Then Hit Run Button
